@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/odin.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ODIN Sign Up Form</title>
+
+</head>
+
+<body>
+    <div class="bg-div">
+        <div class="bg-logo">
+            <img src="assets/odin.png" alt="odin logo" class="odin-logo">
+            <p class="odin-text">ODIN</p>
+        </div>
+        <div class="bg-credit">
+            Photo by <u>Melina Kiefer</u> on <u>Unsplash</u>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <p class="p-1">
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.
+                <br>Sign up <i>now</i> to get started.
+            </p>
+            <p class="p-2">
+                You <i>know</i> want to.
+            </p>
+        </div>
+        <div class="account">
+
+            <form class="form-container">
+                <h3 class="form-title">Let's do this!</h3>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" class="form-control" placeholder="Thor">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" class="form-control" placeholder="Odinson">
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" 
+                        id="email" 
+                        class="form-control"
+                        title-="Please input a valid email address"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" id="phone-number" 
+                        class="form-control"
+                        pattern="^(\d{10}|\d{3}-\d{3}-\d{4})$"
+                        title="Please input a valid phone number in the format 123-456-7890 or 1234567890"
+                        oninput="this.setCustomValidity('')" 
+                        >
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="fname">PASSWORD</label>
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" class="form-control" 
+                        >
+                    </div>
+                </div>
+            </form>
+            <div class="create-account">
+                <button class="btn-create">Create Account</button>
+                <p id="create-text">Already have an account? <a href="javascript:void()" class="login-link">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
